@@ -22,7 +22,8 @@ body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
   color: #444;
   -webkit-transition: all 0.4s 0.3s ease-in;
-          transition: all 0.4s 0.3s ease-in; }
+          transition: all 0.4s 0.3s ease-in; 
+  background: url("http://www.greenpeace.org/international/Global/international/artwork/agriculture/2014/GoldenRice/bg-body-gr.gif") repeat-x scroll 0 0 #FFFFFF !important      }
 
 body, html {
   min-height: 100vh;
@@ -36,6 +37,16 @@ body, html {
 .logo img{
   width: 30%;
 }
+
+/*.preloader-logo {
+  margin: -100px 0 0 -100px;
+  position: absolute;
+  top: 50%;
+  left: 50%; }
+
+.preloader-logo img{
+  width: 100%;
+}*/
 
 .nav ul {
   list-style: none; }
@@ -122,40 +133,35 @@ body, html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #eee;
+  background-color: #45b000;
   z-index: 99;
   height: 100%;
  }
 
-/*#status  {
-     width: 200px;
-     height: 200px;
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     background-image: url(../img/ajax-loader.gif);
-     background-repeat: no-repeat;
-     background-position: center;
-     margin: -100px 0 0 -100px;
- }
-*/
 
 
 .spinner {
-  margin: 100px auto 0;
   width: 70px;
   text-align: center;
   position: fixed;
   top: 50%;
   left: 50%;
   margin-top: -50px;
-  margin-left: -50px;
+  margin-left: -25px;
+
+
 }
 
+.spinner > img{
+  text-align: center;
+  margin-left: -100px;
+  min-width: 60%;
+  width: 300px;
+}
 .spinner > div {
   width: 18px;
   height: 18px;
-  background-color: #4A842D;
+  background-color: #fff;
 
   border-radius: 100%;
   display: inline-block;
